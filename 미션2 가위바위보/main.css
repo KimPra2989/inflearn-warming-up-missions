@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #0F3B25;
+    border: #790f36 1px inset;
+    color: white;
+}
+
+.title {
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+
+@keyframes countDown {
+    from {
+        transform: scale(2);
+    }    
+    to {
+        transform: scale(1);
+    }
+}
+
+.timer {
+    float: right;
+    position: relative;
+    right: 15%;
+    font-size: 40px;
+    transform-origin: bottom;
+    animation-name: countDown;
+    animation-duration: 1s;
+    animation: name  iteration-count direction fill-mode;
+    animation-iteration-count: 5;
+}
+
+.opponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-wrapper {
+    width: 200px;
+    border: white 2px solid;
+    padding: 30px;
+}
+
+.item-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+.user-items {
+    margin: 40px auto 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px
+}
+.user-wrapper {
+    width: 150px;
+    border: white 1px solid;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.start-btn {
+    margin: 100px auto 0;
+    display: block;
+    padding: 20px 12px;
+}

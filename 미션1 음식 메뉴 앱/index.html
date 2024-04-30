@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>음식 메뉴 앱</title>
+    <link rel="stylesheet" href="renderMenu.js" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>메뉴소개</h1>
+        <ul class="menu-nav">
+          <li name="all" class="selected">전체메뉴</li>
+          <li name="ice">빙수</li>
+          <li name="desert">디저트</li>
+          <li name="beverage">음료</li>
+        </ul>
+      </nav>
+
+      <div class="menu-list"></div>
+    </div>
+    <script src="data.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+    <script src="menuSelect.js" type="module"></script>
+  </body>
+</html>
