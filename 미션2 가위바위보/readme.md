@@ -8,23 +8,27 @@ https://drive.google.com/file/d/133vW3wIghPpCeoWksTiFXCbgkdraF0pV/view
 메인
 
 ![메인이미지](./mdImage/시연.gif)
+
 플레이
 
 ![메인이미지](./mdImage/안%20내면%20진거.gif)
+
 시간 내에 선택하지 않았을 때
 
 ### 구현 내용
 - 시작하기를 누르면 게임화면으로 넘어간다.
 
     1. 시작 버튼을 누르면 시작 버튼을 숨기고 가위바위보 선택창을 동적으로 그린다.
-
+  <br/>
 - 컴퓨터는 가위 바위 보 중 랜덤으로 낸다.
     1. [가위, 바위, 보] 배열을 만든다.
     
     2. Math.random으로 배열의 인덱스를 무작위로 고르도록한다. 
+  <br/>
 
 - 가위 바위 보 중 뭐든 냈을 경우에 승패에 따라 스코어를 갱신하고 결과를 보여준다.
     1. 가위바위보 규칙을 따라 조건문을 분기하고 결과에 처리한다.
+  <br/>
 
 - 한 세트가 끝나면 종합 스코어를 표시하고, 다시하기 버튼으로 다시할 수 있도록 한다.
     1. 스코어창에서 데이터를 가져온다.
@@ -43,6 +47,7 @@ https://drive.google.com/file/d/133vW3wIghPpCeoWksTiFXCbgkdraF0pV/view
     1. setInterval을 통해 상대 픽창의 이미지를 계속 바꿔준다.
 
     2. 유저가 선택을 했을 때 interval을 clear하고, 상단에 구현한 무작위 함수를 통해 뽑힌 이미지로 바꾼다.
+  <br/>
 
 - 5초 내에 내지 않으면 패배한다.
     > 'time and tide and 짱껜뽀 wait for no man.'
@@ -56,8 +61,11 @@ https://drive.google.com/file/d/133vW3wIghPpCeoWksTiFXCbgkdraF0pV/view
 
 - 게임 한판을 끝내고 결과를 확인시키는 차원으로 1초 후 게임이 다시 시작하도록 했다. 그러나 1초가 지나기 전 다음 선택을 한 경우 카운트다운의 interval이 중복으로 돌기 시작하는 문제가 있었따.
     - setInterval을 호출하기 전 먼저 선언된 interval이 있는 경우에 clearInterval을 먼저 해주는 것으로 해결할 수 있었다.
+  <br/>
 
-- <span style="background-color:#E6E6FA"> **<이번 미션에서 가장 헤맨 부분>**</span>
+```diff
+- 이번 미션에서 가장 헤맨 부분
+``` 
 리액트 개발처럼 기능별로 함수를 모듈화해서 코드를 나누는 것이 초기 목표였다. 그러나 코드를 나누면 각자의 스코프가 생기고, 그걸 중앙에서 관리하는 것이 생각보다 쉽지 않았다. 처음 countDown과 상대 픽을 스핀하는 함수를 분리하여 작업을 진행했다. 이 경우 중앙에서 이 함수들의 interval을 제어할 방법이 떠오르지 않았다. 그래서 클래스로 메소드들을 만들어두고 중앙에서 그 인스턴스를 만들어 관리했다.
 
 ## 회고
@@ -72,6 +80,7 @@ https://drive.google.com/file/d/133vW3wIghPpCeoWksTiFXCbgkdraF0pV/view
     2. 스코어가 표시됨.
     3. 카운트다운이 시작됨.
     4. 상대 픽이 회전함.
+       
 2. 선택창에서 뭔가 고른 경우
     1. 상대픽 고정.
     2. 카운트다운 멈춤. + 애니메이션도 멈춰야함
