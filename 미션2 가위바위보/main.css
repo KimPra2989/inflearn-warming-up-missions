@@ -1,77 +1,152 @@
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #0F3B25;
-    border: #790f36 1px inset;
-    color: white;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #0f3b25;
+  border: #790f36 1px inset;
+  color: white;
 }
 
 .title {
-    padding: 40px 0;
-    color: white;
-    text-align: center;
-    font-size: 48px;
-    margin: 0;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
 }
 
-@keyframes countDown {
-    from {
-        transform: scale(2);
-    }    
-    to {
-        transform: scale(1);
-    }
+.result {
+  font-size: 48px;
+  color: white;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  display: none;
+}
+
+.result-message {
+    display: none;
+}
+
+.opponent-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .timer {
-    float: right;
-    position: relative;
-    right: 15%;
-    font-size: 40px;
-    transform-origin: bottom;
-    animation-name: countDown;
-    animation-duration: 1s;
-    animation: name  iteration-count direction fill-mode;
-    animation-iteration-count: 5;
+  display: inline-block;
+  display: none;
+  width: 150px;
+  text-align: center;
+  font-size: 40px;
 }
 
-.opponent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes countDown {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.countDown {
+  transform-origin: bottom;
+  animation-name: countDown;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
 }
 
 .item-wrapper {
-    width: 200px;
-    border: white 2px solid;
-    padding: 30px;
+  width: 200px;
+  height: 200px;
+  border: white 2px solid;
+  padding: 30px;
 }
 
 .item-wrapper img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .user-items {
-    margin: 40px auto 0;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px
+  margin: 40px auto 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 .user-wrapper {
-    width: 150px;
-    border: white 1px solid;
-    padding: 20px;
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  border: white 1px solid;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.user-wrapper:hover {
+  transform: translate(10px, -10px);
 }
 
 .start-btn {
-    margin: 100px auto 0;
-    display: block;
-    padding: 20px 12px;
+  margin: 100px auto 0;
+  display: block;
+  padding: 20px 12px;
+}
+
+.dimmed {
+  display: none;
+  background-color: gray;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.final-popup {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: bisque; 
+  color: black;
+  z-index: 10;
+}
+
+.final-title {
+  color: black
+}
+
+.final-score {
+  font-size: 48px;
+  display: block;
+}
+
+.restart {
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+}
+
+.final-score-message {
+  font-size: 32px;
+  padding: 24px;
 }

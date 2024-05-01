@@ -53,8 +53,8 @@ https://drive.google.com/file/d/1unOxdtFTmAMN-Ihnv5st8PBTbCzmpWGX/view
 
 ### 배운 점
 
-    name 속성이 html 공통 속성인 줄 알았는데 아니었다. 보통 form 테그 내의 input에 name 속성을 추가하여 change 이벤트와 함께 e.targer.name을 통해 input값에 접근하는 경우가 많아서 name 속성이 공통 속성인 줄 았았다. name 속성이 없는 요소에선 getAttribute메소드를 통해 접근해야한다. 
+name 속성이 html 공통 속성인 줄 알았는데 아니었다. 보통 form 테그 내의 input에 name 속성을 추가하여 change 이벤트와 함께 e.targer.name을 통해 input값에 접근하는 경우가 많아서 name 속성이 공통 속성인 줄 았았다. name 속성이 없는 요소에선 getAttribute메소드를 통해 접근해야한다. 
 
 ### 회고
 
-    간단한 프로젝트지만 리액트에 익숙해져서 그런지 DOM을 직접 다루는 방식이 생각보다 낫설고 쉽지만은 않았다. js파트에서 연습을 많이 해봐야겠다.
+간단한 프로젝트지만 리액트에 익숙해져서 그런지 DOM을 직접 다루는 방식이 생각보다 낫설고 쉽지만은 않았다. js파트에서 연습을 많이 해봐야겠다.

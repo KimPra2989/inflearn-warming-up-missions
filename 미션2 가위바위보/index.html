@@ -6,25 +6,30 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1 class="title">
-      <span>가위</span>
-      <span>바위</span>
-      <span>보</span>
-    </h1>
+    <h1 class="title">가위 바위 보</h1>
 
-    <span class="timer">5</span>
-    <div class="opponent">
-      <div class="item-wrapper">
-        <img src="assets/scissors.png" alt="scissors" />
-        <!-- <img src="assets/rock.png" alt="rock"> -->
-        <!-- <img src="assets/paper.png" alt="paper"> -->
+    <div class="opponent-container">
+      <div class="result">
+        <span>Score</span>
+        <span id="user-score">0</span> : <span id="opponent-score">0</span>
+        <span id="result-message"></span>
       </div>
+      <div class="item-wrapper opponent">
+        <img src="assets/scissors.png" alt="scissors" />
+      </div>
+      <span class="timer countDown">5</span>
     </div>
     <div class="user-items">
       <button class="start-btn">시작하기</button>
     </div>
-    <script src="index.js" type="module"></script>
-    <script src="start.js" type="module"></script>
-    <!-- <script src="countDown.js" type="module"></script> -->
+    <div class="dimmed">
+      <div class="final-popup">
+        <h1 class="title final-title">최종 점수</h1>
+        <span class="final-score"></span>
+        <span class="final-score-message"></span>
+        <button class="restart">다시하기</button>
+      </div>
+    </div>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
