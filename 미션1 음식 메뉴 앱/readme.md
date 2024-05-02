@@ -3,6 +3,15 @@
 ## 목표
 https://drive.google.com/file/d/1unOxdtFTmAMN-Ihnv5st8PBTbCzmpWGX/view
 
+## 미리보기
+
+![메인화면](https://github.com/KimPra2989/inflearn-warming-up-missions/assets/106394183/20b53f16-9533-4479-8bfe-612706ef3a61)
+메인화면
+
+![시연](https://github.com/KimPra2989/inflearn-warming-up-missions/assets/106394183/97a140d2-1726-44ed-9ea6-5951e149b974)
+시연
+
+
 ## 구현 내용
 - 상단의 메뉴텝을 누르면 항목에 맞는 음식이 나타난다.
 - 선택된 텝을 알 수 있도록 한다.
