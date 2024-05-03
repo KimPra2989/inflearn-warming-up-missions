@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>책 기록 앱</title>
+  </head>
+
+  <body>
+    <h1>책 기록 앱</h1>
+    <fieldset>
+      <legend>책 등록</legend>
+      <form class="input-container">
+        <br />
+        <label for="bookName">책이름</label> :
+        <input autofocus type="text" id="bookName" placeholder="희랍어 시간" required />
+        <br />
+        <br />
+        <label for="authorName">저자</label> :
+        <input type="text" id="authorName" placeholder="한강" required />
+        <br />
+        <br />
+        <button type="submit" id="add-btn">등록하기</button>
+        <br />
+        <br />
+      </form>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>등록한 책`</legend>
+      <table>
+        <thead>
+          <tr>
+            <th>제목</th>
+            <th>저자</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </fieldset>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
