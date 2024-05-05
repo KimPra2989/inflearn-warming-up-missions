@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#search-result {
+    display: none;
+}
+
+.profile-container {
+  padding: 40px 0;
+  display: flex;
+}
+
+.profile {
+  flex: 0 0 200px;
+  margin: auto 40px;
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-info {
+  flex: 1; /* 남은 공간 모두 차지 */
+}
+
+.profile-info h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.profile-info h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  color: #666;
+}
+
+.stats {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.stats li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #666;
+}
+
+.bio {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* repo */
+.repos {
+  padding: 20px;
+}
+
+.repos h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.repository {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.repo-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.repo-etc {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}

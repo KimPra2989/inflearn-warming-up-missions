@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="search-container container">
+      <h1>GitHub User Finder</h1>
+      <p>Enter a username to fetch a user profile and repos</p>
+      <input type="text" id="searchUser" placeholder="Enter GitHub Username" autofocus/>
+    </div>
+
+    <div id="search-result" class="container">
+      <div class="profile-container">
+        <div class="profile">
+          <img
+            id="profile-picture"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="profile-info">
+          <h1 id="user-id">User ID</h1>
+          <h3 id="user-name">User Name</h3>
+          <ul class="stats">
+            <li>
+              <strong>Followers:</strong> <span id="follower">비밀임</span>
+            </li>
+            <li>
+              <strong>Following:</strong> <span id="following">비밀임</span>
+            </li>
+            <li><strong>Repos:</strong> <span id="repos">비밀임</span></li>
+          </ul>
+          <ui id="bio"></ui>
+        </div>
+      </div>
+      <div class="repos">
+        <h2>Repos</h2>
+        <div class="repo-grid"></div>
+      </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
