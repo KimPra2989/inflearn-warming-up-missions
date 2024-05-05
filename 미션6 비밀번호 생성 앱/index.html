@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>비밀번호 생성 앱</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Password Generator</h1>
+      <form class="password-container">
+        <p class="password-input-label">password length (6~70)</p>
+        <input type="number" id="pw-length" min="6" max="70" required />
+        <button id="generate-btn" type="submit">Generate Password</button>
+      </form>
+      <div id="pw-result">비밀번호</div>
+      <fieldset class="options">
+        <legend>비밀번호 옵션</legend>
+        <label class="include-texts"> 소문자 포함 </label>
+        <input type="checkbox" id="include-uppercase" />
+        <label for="include-uppercase"> 대문자 포함 </label>
+        <input type="checkbox" id="include-numbers" />
+        <label for="include-numbers"> 숫자 포함 </label>
+        <input type="checkbox" id="include-symbols" />
+        <label for="include-symbols">
+          <abbr title="@, !, $, &, %"> 특수 문자 포함 </abbr>
+        </label>
+      </fieldset>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
