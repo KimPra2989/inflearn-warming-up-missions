@@ -1,0 +1,1 @@
+export const CATEGORY_OPTIONS = ['전체', '식비', '교통', '의류', '의료', '교육', '기타']
