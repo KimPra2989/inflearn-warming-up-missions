@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
+import { Colors } from '../../constant/Colors'
 import { POKEMON_NAMES_KO } from '../../constant/pokemonKoNames'
 import Flex from '../shared/Flex'
-import { Colors } from '../../constant/Colors'
 
 interface PokedexRowProps {
   name: string
